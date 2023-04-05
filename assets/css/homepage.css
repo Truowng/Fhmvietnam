@@ -1,16 +1,5 @@
 /* START CONTENT */
 #content {
-  margin-top: var(--header-height);
-  background-image: url();
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: rgb(0, 82, 161);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 82, 161, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
 }
 
 /* END CONTENT */
@@ -22,159 +11,276 @@
 #banner .banner-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   height: 100%;
   padding-right: 40px;
 }
 
 #banner .banner-content * {
-  color: #fff;
+  color: #000;
 }
 
-#banner .banner-content .button {
-  color: var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #fff;
-  width: fit-content;
-  font-size: 20px;
+#banner .banner-content .title {
+  font-size: 80px;
+  font-weight: 600;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+#banner .banner-content-slide-container {
+  height: 120px;
+  overflow: hidden;
+  user-select: none;
+}
+
+#banner .banner-content-slide {
+  animation: textSlide cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+}
+
+#banner .banner-content-slide p {
+  margin-bottom: 0;
+  font-size: 80px;
   font-weight: 600;
 }
 
-#banner .banner-img-container {
+#banner .banner-icon {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
   align-items: center;
+  background-color: #000;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  transition: all ease 0.3s;
+  margin: 0 auto;
 }
 
-#banner .banner-img {
-  width: 100%;
-  height: fit-content;
-  overflow: hidden;
-  border-radius: 10px;
+#banner .banner-desc {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  user-select: none;
+  margin-top: 200px;
 }
 
-#banner .banner-img img {
-  width: 100%;
-}
-
-#banner .banner-img:first-child {
-  animation: upAndDown ease-in-out 1.5s infinite alternate-reverse;
-}
-
-#banner .banner-img:last-child {
-  animation: downAndUp ease-in-out 1.5s infinite alternate-reverse;
+#banner .banner-desc p {
+  font-size: 20px;
+  width: 50%;
+  font-weight: 500;
+  text-align: right;
 }
 
 /* END BANNER */
 
-/* START SERVICE */
-#service {
+/* START PROJECT */
+#project {
+  background-color: #000;
 }
 
-#service h2 {
-  text-align: right;
-  font-size: 60px;
-  color: #fff;
-}
-
-#service h2 span {
-  font-weight: 700;
-}
-
-#service .service-list {
-  margin-top: 40px;
-  display: flex;
-  gap: 60px;
-  flex-direction: column;
-}
-
-#service .service-item {
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 82, 161, 0.2);
-  background-color: #fff;
-  padding: 40px;
-}
-
-#service .service-item:nth-child(2n) .service-item-content {
-  align-items: flex-end;
-  padding-right: 0;
-  padding-left: 20px;
-}
-
-#service .service-item:nth-child(2n) .service-item-content .description,
-#service .service-item:nth-child(2n) .service-item-content .title,
-#service .service-item:nth-child(2n) .service-item-content .sub-title {
-  text-align: right;
-}
-
-#service .service-item-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 20px;
-  height: 100%;
-}
-
-#service .service-item-content .title {
-  font-size: 50px;
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-#service .service-item-content .sub-title {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-#service .service-item-content .description {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-#service .service-item-content .button {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  width: fit-content;
-  color: var(--primary-color);
-  gap: 10px;
-  font-size: 18px;
-}
-
-#service .service-item-content .button:hover span {
-  background-color: var(--primary-color);
-}
-
-#service .service-item-content .button:hover span svg {
-  color: #fff;
-}
-
-#service .service-item-content .button span {
-  border-radius: 50px;
-  font-size: 18px;
-  border: 1px solid var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  transition: all ease 0.5s;
-}
-
-#service .service-item-content .button span svg {
-  color: var(--primary-color);
-  transition: all ease 0.3s;
-}
-
-#service .service-item-img {
-  width: 100%;
-  border-radius: 15px;
+#project .project-slide {
+  padding: 100px 0;
   overflow: hidden;
 }
 
-#service .service-item-img img {
+#project .project-slide-item {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: fit-content;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+#project .project-slide-item:first-child {
+  animation: imageSlide linear 30s infinite reverse;
+}
+
+#project .project-slide-item:last-child {
+  animation: imageSlide linear 30s infinite;
+  margin-bottom: 0;
+}
+
+#project .project-slide-img {
+  width: 600px;
+  height: auto;
+}
+
+#project .project-slide-img img {
   width: 100%;
 }
+
+/* END PROJECT */
+
+/* START VIDEO */
+#video {
+  margin-top: 200px;
+}
+
+#video .video-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+#video .video-text h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#video .video-src {
+  width: 100%;
+}
+
+#video .video-src video {
+  width: 100%;
+}
+
+/* END VIDEO */
+
+/* START SERVICE */
+#service {
+  margin-top: 200px;
+  padding: 100px 0;
+  background-color: #000;
+}
+
+#service .service-text h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+#service .service-desktop {
+  margin-top: 100px;
+}
+
+#service .service-desktop .service-wrapper {
+  background-color: var(--gray);
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+#service .service-desktop .button-control {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#service .service-desktop .pagination {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#service .service-desktop .pagination .dot {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  border-radius: 100px;
+  transition: all ease 0.3s;
+}
+
+#service .service-desktop .pagination .dot.active {
+  background-color: #000;
+}
+
+#service .service-desktop .button-control .prev,
+#service .service-desktop .button-control .next {
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+#service .service-desktop .button-control .prev:hover,
+#service .service-desktop .button-control .next:hover {
+  transform: scale(1.1);
+}
+
+#service .service-desktop .service-slide {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+#service .service-desktop .service-list,
+#service .service-desktop .service-img-list {
+  flex: 1;
+  height: 100%;
+}
+
+#service .service-desktop .service-img-item {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#service .service-desktop .service-img-item.active {
+  display: flex;
+}
+
+#service .service-desktop .service-img-item svg {
+  width: 200px;
+  height: auto;
+}
+
+#service .service-desktop .service-item {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+
+#service .service-desktop .service-item.active {
+  display: flex;
+}
+
+#service .service-desktop .service-item-badge {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
+
+#service .service-desktop .service-item-badge p {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #000;
+}
+
+#service .service-desktop .service-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#service .service-desktop .service-item-text h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#service .service-desktop .service-item-text p {
+  font-size: 18px;
+  width: 90%;
+}
+
 /* END SERVICE */
