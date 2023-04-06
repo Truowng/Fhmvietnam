@@ -40,7 +40,7 @@ const changeImages = () => {
     } else {
       i = 0;
     }
-  }, 1000);
+  }, 500);
 };
 
 changeImages();
