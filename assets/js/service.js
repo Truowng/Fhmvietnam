@@ -39,11 +39,13 @@ const serviceDigitalImages = [
 
 const serviceAdvertisingImages = [
   '<svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><circle cx="111.5" cy="82.5" r="34" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="174.5" y="34.5" width="35" height="14" stroke="white"/><rect x="19.5" y="1.5" width="23" height="18" stroke="white"/></svg>',
-  ' <svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="19.5" y="14.5" width="23" height="5" stroke="white"/><path d="M203.194 24.4815L210.774 18.4338L209.114 27.7298L208.99 28.4259L209.688 28.311L219.368 26.7178L213.111 33.9458L212.631 34.4995L213.322 34.7443L222.504 38L213.322 41.2557L212.631 41.5005L213.111 42.0542L219.368 49.2822L209.688 47.689L208.99 47.5741L209.114 48.2702L210.774 57.5662L203.194 51.5185L202.661 51.0929L202.416 51.7298L199 60.6076L195.584 51.7298L195.339 51.0929L194.806 51.5185L187.226 57.5662L188.886 48.2702L189.01 47.5741L188.312 47.689L178.632 49.2822L184.889 42.0542L185.369 41.5005L184.678 41.2557L175.496 38L184.678 34.7443L185.369 34.4995L184.889 33.9458L178.632 26.7178L188.312 28.311L189.01 28.4259L188.886 27.7298L187.226 18.4338L194.806 24.4815L195.339 24.9071L195.584 24.2702L199 15.3924L202.416 24.2702L202.661 24.9071L203.194 24.4815Z" fill="white" stroke="white"/><circle cx="111.5" cy="82.5" r="34" stroke="white"/></svg>',
+  '<svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="19.5" y="14.5" width="23" height="5" stroke="white"/><path d="M186.087 18.7394L194.527 11.8528L192.675 22.4589L192.553 23.1553L193.25 23.0379L204.051 21.2199L197.056 29.4841L196.592 30.0323L197.267 30.2772L207.533 34L197.267 37.7228L196.592 37.9677L197.056 38.5159L204.051 46.7801L193.25 44.9621L192.553 44.8447L192.675 45.5411L194.527 56.1472L186.087 49.2606L185.548 48.8207L185.303 49.472L181.5 59.58L177.697 49.472L177.452 48.8207L176.913 49.2606L168.473 56.1472L170.325 45.5411L170.447 44.8447L169.75 44.9621L158.949 46.7801L165.944 38.5159L166.408 37.9677L165.733 37.7228L155.467 34L165.733 30.2772L166.408 30.0323L165.944 29.4841L158.949 21.2199L169.75 23.0379L170.447 23.1553L170.325 22.4589L168.473 11.8528L176.913 18.7394L177.452 19.1793L177.697 18.5281L181.5 8.42005L185.303 18.5281L185.548 19.1793L186.087 18.7394Z" fill="white" stroke="white"/><mask id="path-6-inside-1_20_2" fill="white"><path d="M146 82.5C146 73.35 142.365 64.5748 135.895 58.1048C129.425 51.6348 120.65 48 111.5 48C102.35 48 93.5748 51.6348 87.1048 58.1048C80.6348 64.5748 77 73.35 77 82.5L111.5 82.5H146Z"/></mask><path d="M146 82.5C146 73.35 142.365 64.5748 135.895 58.1048C129.425 51.6348 120.65 48 111.5 48C102.35 48 93.5748 51.6348 87.1048 58.1048C80.6348 64.5748 77 73.35 77 82.5L111.5 82.5H146Z" fill="#FDFDFD" stroke="white" stroke-width="2" mask="url(#path-6-inside-1_20_2)"/><mask id="path-7-inside-2_20_2" fill="white"><path d="M77 82.5C77 91.65 80.6348 100.425 87.1048 106.895C93.5748 113.365 102.35 117 111.5 117C120.65 117 129.425 113.365 135.895 106.895C142.365 100.425 146 91.65 146 82.5L111.5 82.5L77 82.5Z"/></mask><path d="M77 82.5C77 91.65 80.6348 100.425 87.1048 106.895C93.5748 113.365 102.35 117 111.5 117C120.65 117 129.425 113.365 135.895 106.895C142.365 100.425 146 91.65 146 82.5L111.5 82.5L77 82.5Z" stroke="white" stroke-width="2" mask="url(#path-7-inside-2_20_2)"/></svg>',
   '<svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="19.5" y="14.5" width="23" height="5" stroke="white"/><path d="M188.417 19.0451L202.027 7.86746L199.039 25.0954L198.918 25.792L199.615 25.6739L217.047 22.7205L205.748 36.156L205.289 36.7026L205.96 36.9474L222.542 43L205.96 49.0526L205.289 49.2974L205.748 49.844L217.047 63.2795L199.615 60.3261L198.918 60.208L199.039 60.9046L202.027 78.1325L188.417 66.9549L187.876 66.5109L187.632 67.1663L181.5 83.5718L175.368 67.1663L175.124 66.5109L174.583 66.9549L160.973 78.1325L163.961 60.9046L164.082 60.208L163.385 60.3261L145.953 63.2795L157.252 49.844L157.711 49.2974L157.04 49.0526L140.458 43L157.04 36.9474L157.711 36.7026L157.252 36.156L145.953 22.7205L163.385 25.6739L164.082 25.792L163.961 25.0954L160.973 7.86746L174.583 19.0451L175.124 19.4891L175.368 18.8337L181.5 2.42818L187.632 18.8337L187.876 19.4891L188.417 19.0451Z" fill="white" stroke="white"/><circle cx="111.5" cy="82.5" r="34" fill="#FDFDFD" stroke="white"/></svg>',
   '<svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><circle cx="111.5" cy="82.5" r="34" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="174.5" y="34.5" width="35" height="14" stroke="white"/><rect x="19.5" y="1.5" width="23" height="18" stroke="white"/></svg>',
 ];
 let count = 0;
+
+// Ham lam hieu ung hinh anh
 
 const changeImages = () => {
   let i = 0;
@@ -61,48 +63,76 @@ const changeImages = () => {
 
 changeImages();
 
+// Ham tu dong chay slide dich vu
+
+const autoplay = setInterval(() => {
+  if (count < serviceItems.length - 1) {
+    count++;
+    changeService();
+  } else {
+    count = 0;
+    changeService();
+  }
+  if (count === serviceItems.length - 1) {
+    servicePagination.classList.add("white");
+    buttonControl.classList.add("white");
+  } else {
+    servicePagination.classList.remove("white");
+    buttonControl.classList.remove("white");
+  }
+}, 5000);
+
+// Ham set kieu animation
+
+const setAnimate = (el, type) => {
+  document.querySelector(
+    `.${el}.active`
+  ).style.animationName = `${animations[type]}`;
+};
+
+// Ham set class
+
 const handleActive = (elRemove, elSet) => {
   if (elRemove === "service-item") {
-    document.querySelector(
-      `.${elRemove}.active`
-    ).style.animationName = `${animations[2]}`;
+    setAnimate(elRemove, 2);
   } else {
-    document.querySelector(
-      `.${elRemove}.active`
-    ).style.animationName = `${animations[3]}`;
+    setAnimate(elRemove, 3);
   }
 
   setTimeout(() => {
     document.querySelector(`.${elRemove}.active`).classList.remove("active");
     elSet.classList.add("active");
     if (elSet.classList == "service-item active") {
-      document.querySelector(
-        `.${elRemove}.active`
-      ).style.animationName = `${animations[0]}`;
+      setAnimate(elRemove, 0);
     } else {
-      document.querySelector(
-        `.${elRemove}.active`
-      ).style.animationName = `${animations[1]}`;
+      setAnimate(elRemove, 1);
     }
   }, 500);
 };
 
+// Ham thay doi dich vu
+
+const changeService = () => {
+  handleActive("service-item", serviceItems[count]);
+  handleActive("service-img-item", serviceImages[count]);
+  handleActive("dot", serviceDots[count]);
+  serviceWrapper.style.backgroundColor = `var(${colorPalette[count]})`;
+};
+
+// Ham xu li thay doi dich vu
+
 const handleControl = (action) => {
+  clearInterval(autoplay);
+
   if (action === "next") {
     if (count < serviceItems.length - 1) {
       count++;
-      handleActive("service-item", serviceItems[count]);
-      handleActive("service-img-item", serviceImages[count]);
-      handleActive("dot", serviceDots[count]);
-      serviceWrapper.style.backgroundColor = `var(${colorPalette[count]})`;
+      changeService();
     }
   } else if (action === "prev") {
     if (0 < count) {
       count--;
-      handleActive("service-item", serviceItems[count]);
-      handleActive("service-img-item", serviceImages[count]);
-      handleActive("dot", serviceDots[count]);
-      serviceWrapper.style.backgroundColor = `var(${colorPalette[count]})`;
+      changeService();
     }
   }
   if (count === serviceItems.length - 1) {
