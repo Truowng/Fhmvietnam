@@ -318,6 +318,18 @@ a:hover::after {
   transform: translateY(0);
 }
 
+#header .menu-desktop {
+  display: block;
+}
+
+#header .menu-mobile {
+  display: none;
+}
+
+#header .header-container .toggle-button {
+  display: none;
+}
+
 /* END HEADER */
 
 /* START FOOTER */

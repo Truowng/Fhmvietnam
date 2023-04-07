@@ -156,6 +156,7 @@
 
 #service .service-desktop {
   margin-top: 100px;
+  display: block;
 }
 
 #service .service-desktop .service-wrapper {

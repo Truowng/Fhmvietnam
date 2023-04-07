@@ -25,6 +25,7 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/homepage.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>Trang chủ</title>
   </head>
   <body>
@@ -40,22 +41,48 @@
               />
             </a>
           </div>
-          <div class="menu">
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a href="#">portfolio</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">dịch vụ</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">dự án</a>
-              </li>
-            </ul>
-            <div class="button">
-              <a href="#"> <span>liên</span><span>hệ</span> </a>
-              <a href="#"> <span>liên</span><span>hệ</span> </a>
+          <div class="menu-desktop">
+            <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="#">portfolio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dự án</a>
+                </li>
+              </ul>
+              <div class="button">
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+              </div>
             </div>
+          </div>
+
+          <div class="menu-mobile">
+            <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="#">portfolio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dự án</a>
+                </li>
+              </ul>
+              <div class="button">
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-button" onclick="toggleMobileMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
         </div>
       </div>
@@ -715,6 +742,75 @@
               </div>
             </div>
           </div>
+
+          <div class="service-mobile">
+            <div class="service-wrapper">
+              <div class="service-list">
+                <div class="service-item active">
+                  <div class="service-item-text">
+                    <h3>
+                      Website Design
+                      <div class="toggle-service">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                      </div>
+                    </h3>
+                    <div class="service-item-badge">
+                      <p>UI/UX</p>
+                      <p>SEO</p>
+                      <p>Bảo Mật</p>
+                    </div>
+                    <p>
+                      Cung cấp trọn gói từ Domain - Hosting /VPS - Website – Web
+                      App cho đa lĩnh vực. Đảm bảo đưa ra các chiến lược phát
+                      triển theo đúng định hướng kinh doanh của doanh nghiệp. Kỹ
+                      thuật viên lập trình Web App có trên 10 năm kinh nghiệm
+                      với trình độ chuyên môn cao và luôn tâm huyết với nghề.
+                      Được cam kết về chất lượng về chất lượng sản phẩm và có
+                      mức chi phí vô cùng phải chăng.
+                    </p>
+                  </div>
+                  <a href="#">
+                    <div class="button button-light button-sm">
+                      <div class="icon">
+                        <svg
+                          width="159"
+                          height="97"
+                          viewBox="0 0 159 97"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.524414 48.1672L152.625 48.1672"
+                            stroke="white"
+                            stroke-width="10"
+                          />
+                          <line
+                            x1="154.466"
+                            y1="50.8179"
+                            x2="108.149"
+                            y2="4.50072"
+                            stroke="white"
+                            stroke-width="10"
+                          />
+                          <line
+                            x1="155.268"
+                            y1="44.7666"
+                            x2="107.178"
+                            y2="92.8562"
+                            stroke="white"
+                            stroke-width="10"
+                            stroke-linejoin="bevel"
+                          />
+                        </svg>
+                      </div>
+                      <a href="#" class="text">Tìm hiểu thêm</a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- END SERVICE -->
@@ -919,5 +1015,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./assets/js/service.js"></script>
+    <script src="./assets/js/menu.js"></script>
   </body>
 </html>
