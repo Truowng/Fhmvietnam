@@ -1,4 +1,4 @@
-const colorPalette = ["--gray", "--yellow", "--red"];
+const colorPalette = ["--gray", "--yellow", "--red", "--gray"];
 const animations = ["slideInUp", "slideInDown", "slideOutUp", "slideOutDown"];
 const serviceItems = document.querySelectorAll(
   "#service .service-desktop .service-item"
@@ -9,10 +9,6 @@ const serviceImages = document.querySelectorAll(
 
 const servicePagination = document.querySelector(
   "#service .service-desktop .pagination"
-);
-
-const serviceDots = document.querySelectorAll(
-  "#service .service-desktop .pagination .dot"
 );
 
 const serviceWrapper = document.querySelector(
@@ -43,7 +39,31 @@ const serviceAdvertisingImages = [
   '<svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="19.5" y="14.5" width="23" height="5" stroke="white"/><path d="M188.417 19.0451L202.027 7.86746L199.039 25.0954L198.918 25.792L199.615 25.6739L217.047 22.7205L205.748 36.156L205.289 36.7026L205.96 36.9474L222.542 43L205.96 49.0526L205.289 49.2974L205.748 49.844L217.047 63.2795L199.615 60.3261L198.918 60.208L199.039 60.9046L202.027 78.1325L188.417 66.9549L187.876 66.5109L187.632 67.1663L181.5 83.5718L175.368 67.1663L175.124 66.5109L174.583 66.9549L160.973 78.1325L163.961 60.9046L164.082 60.208L163.385 60.3261L145.953 63.2795L157.252 49.844L157.711 49.2974L157.04 49.0526L140.458 43L157.04 36.9474L157.711 36.7026L157.252 36.156L145.953 22.7205L163.385 25.6739L164.082 25.792L163.961 25.0954L160.973 7.86746L174.583 19.0451L175.124 19.4891L175.368 18.8337L181.5 2.42818L187.632 18.8337L187.876 19.4891L188.417 19.0451Z" fill="white" stroke="white"/><circle cx="111.5" cy="82.5" r="34" fill="#FDFDFD" stroke="white"/></svg>',
   '<svg width="224" height="146" viewBox="0 0 224 146" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="19.5" width="223" height="126" stroke="white"/><path d="M60 20L71.6552 1H151.897L164 20" stroke="white"/><circle cx="111.5" cy="82.5" r="34" stroke="white"/><path d="M155.5 83C155.5 107.582 135.795 127.5 111.5 127.5C87.2047 127.5 67.5 107.582 67.5 83C67.5 58.418 87.2047 38.5 111.5 38.5C135.795 38.5 155.5 58.418 155.5 83Z" stroke="white"/><rect x="174.5" y="34.5" width="35" height="14" stroke="white"/><rect x="19.5" y="1.5" width="23" height="18" stroke="white"/></svg>',
 ];
+
+const serviceSEOImages = [
+  '<svg width="224" height="225" viewBox="0 0 224 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.10799 56.6364L112 0.560293L222.892 56.6364L112 112.712L1.10799 56.6364Z" stroke="black"/><path d="M31.2467 56.3275L111.345 16.2783L191.443 56.3275L111.345 96.3767L31.2467 56.3275Z" fill="black" stroke="black"/><path d="M222.69 56.3275V165.708L111.682 224M111.682 224V113.084M111.682 224L1.43591 166.069V57.2727" stroke="black"/></svg>',
+  '<svg width="224" height="225" viewBox="0 0 224 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.10799 56.6364L112 0.560293L222.892 56.6364L112 112.712L1.10799 56.6364Z" stroke="black"/><path d="M31.2467 56.3275L111.345 16.2783L191.443 56.3275L111.345 96.3767L31.2467 56.3275Z" fill="black" stroke="black"/><path d="M222.69 56.3275V165.708L111.681 224M111.681 224V113.084M111.681 224L1.43591 166.069V57.2727" stroke="black"/><path d="M210.901 77.9415L126.409 121.825V201.731L210.901 157.193V77.9415Z" fill="black" stroke="black"/><path d="M210.901 77.9415L126.409 121.825V201.731L210.901 157.193V77.9415Z" fill="black" stroke="black"/></svg>',
+  '<svg width="224" height="225" viewBox="0 0 224 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.10799 56.6364L112 0.560293L222.892 56.6364L112 112.712L1.10799 56.6364Z" stroke="black"/><path d="M31.2467 56.3275L111.345 16.2783L191.443 56.3275L111.345 96.3767L31.2467 56.3275Z" fill="black" stroke="black"/><path d="M222.69 56.3275V165.708L111.682 224M111.682 224V113.084M111.682 224L1.43591 166.069V57.2727" stroke="black"/><path d="M210.901 77.9415L126.409 121.825V201.731L210.901 157.193V77.9415Z" fill="black" stroke="black"/><path d="M210.901 77.9415L126.409 121.825V201.731L210.901 157.193V77.9415Z" fill="black" stroke="black"/><path d="M13.0994 77.2866L97.5906 121.17V201.076L13.0994 156.538V77.2866Z" fill="black" stroke="black"/></svg>',
+  '<svg width="224" height="225" viewBox="0 0 224 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.10799 56.6364L112 0.560293L222.892 56.6364L112 112.712L1.10799 56.6364Z" stroke="black"/><path d="M31.2467 56.3275L111.345 16.2783L191.443 56.3275L111.345 96.3767L31.2467 56.3275Z" fill="black" stroke="black"/><path d="M222.69 56.3275V165.708L111.682 224M111.682 224V113.084M111.682 224L1.43591 166.069V57.2727" stroke="black"/><path d="M13.0994 77.2866L97.5906 121.17V201.076L13.0994 156.538V77.2866Z" fill="black" stroke="black"/></svg>',
+];
 let count = 0;
+
+// Ham render dot
+
+const renderDots = () => {
+  let htmls = ['<div class="dot active"></div>'];
+  for (i = 0; i < serviceItems.length - 1; i++) {
+    const html = `<div class="dot"></div>`;
+    htmls.push(html);
+  }
+  servicePagination.innerHTML = htmls.join("");
+};
+
+renderDots();
+
+const serviceDots = document.querySelectorAll(
+  "#service .service-desktop .pagination .dot"
+);
 
 // Ham lam hieu ung hinh anh
 
@@ -54,6 +74,7 @@ const changeImages = () => {
       serviceImages[0].innerHTML = `${serviceWebsiteImages[i]}`;
       serviceImages[1].innerHTML = `${serviceDigitalImages[i]}`;
       serviceImages[2].innerHTML = `${serviceAdvertisingImages[i]}`;
+      serviceImages[3].innerHTML = `${serviceSEOImages[i]}`;
       i++;
     } else {
       i = 0;
@@ -73,7 +94,7 @@ const autoplay = setInterval(() => {
     count = 0;
     changeService();
   }
-  if (count === serviceItems.length - 1) {
+  if (count === 2) {
     servicePagination.classList.add("white");
     buttonControl.classList.add("white");
   } else {
@@ -135,7 +156,7 @@ const handleControl = (action) => {
       changeService();
     }
   }
-  if (count === serviceItems.length - 1) {
+  if (count === 2) {
     servicePagination.classList.add("white");
     buttonControl.classList.add("white");
   } else {

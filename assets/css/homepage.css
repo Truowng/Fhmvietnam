@@ -34,7 +34,7 @@
 }
 
 #banner .banner-content-slide {
-  animation: textSlide cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+  animation: textSlide cubic-bezier(0.77, 0, 0.175, 1) 8s infinite;
 }
 
 #banner .banner-content-slide p {
@@ -232,7 +232,7 @@
 
 #service .service-desktop .service-slide {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
@@ -407,7 +407,7 @@
 
 #contact .contact-button {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: end;
   height: 100%;
 }

@@ -128,15 +128,24 @@ a:hover::after {
     transform: translateY(0%);
   }
 
-  35% {
-    transform: translateY(-25%);
+  20% {
+    transform: translateY(-17%);
   }
 
-  65% {
-    transform: translateY(-50%);
+  40% {
+    transform: translateY(-34%);
   }
+
+  60% {
+    transform: translateY(-51%);
+  }
+
+  80% {
+    transform: translateY(-68%);
+  }
+
   100% {
-    transform: translateY(-75%);
+    transform: translateY(-83.3%);
   }
 }
 
