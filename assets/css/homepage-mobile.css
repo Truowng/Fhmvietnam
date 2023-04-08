@@ -118,6 +118,10 @@
   #service .service-mobile .service-item .service-item-badge p {
     text-align: center;
     font-size: 12px;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: 1px solid #000;
   }
 
   #service .service-mobile .service-item:nth-child(3) .service-item-badge p {
@@ -146,13 +150,7 @@
   #service .service-mobile .service-item-badge {
     display: flex;
     justify-content: start;
-    gap: 15px;
-  }
-
-  #service .service-mobile .service-item-badge p {
-    padding: 10px;
-    border-radius: 40px;
-    border: 1px solid #000;
+    gap: 10px;
   }
 
   #service .service-mobile .service-item-text {
@@ -162,7 +160,7 @@
   }
 
   #service .service-mobile .service-item-text h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
@@ -185,6 +183,10 @@
     background-color: #000;
   }
 
+  #service .service-mobile .service-item .toggle-service .line:first-child {
+    transform: rotate(-90deg);
+  }
+
   #service .service-mobile .service-item-text p {
     font-size: 14px;
     width: 100%;
@@ -195,7 +197,7 @@
     .service-item.active
     .toggle-service
     .line:first-child {
-    transform: rotate(-90deg);
+    transform: rotate(0);
   }
   /* END SERVICE */
 
@@ -203,6 +205,11 @@
   #client {
     margin-top: 100px;
   }
+
+  #client .row {
+    flex-direction: column-reverse;
+  }
+
   #client .client-text {
     align-items: start;
     margin-bottom: 60px;

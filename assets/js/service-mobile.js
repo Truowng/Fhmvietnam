@@ -4,20 +4,21 @@ const serviceMobileItems = document.querySelectorAll(
 
 serviceMobileItems.forEach((serviceMobileItem) => {
   serviceMobileItem.addEventListener("click", () => {
-    switch (
-      document.querySelector("#service .service-mobile .service-item.active") ==
-      null
+    if (
+      document.querySelector(
+        "#service .service-mobile .service-item.active"
+      ) === null
     ) {
-      case true:
-        serviceMobileItem.classList.add("active");
-        break;
-      case false:
+      serviceMobileItem.classList.add("active");
+    } else {
+      if (serviceMobileItem.classList.contains("active")) {
+        serviceMobileItem.classList.remove("active");
+      } else {
         document
           .querySelector("#service .service-mobile .service-item.active")
-          .classList.remove("active")
-          ? serviceMobileItem.classList.add("active")
-          : "";
-        break;
+          .classList.remove("active");
+        serviceMobileItem.classList.add("active");
+      }
     }
   });
 });
