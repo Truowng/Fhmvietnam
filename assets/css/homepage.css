@@ -159,6 +159,10 @@
   display: block;
 }
 
+#service .service-mobile {
+  display: none;
+}
+
 #service .service-desktop .service-wrapper {
   background-color: var(--gray);
   height: 700px;

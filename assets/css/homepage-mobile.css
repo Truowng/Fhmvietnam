@@ -17,6 +17,10 @@
     display: none;
   }
 
+  #banner .banner-desc {
+    margin-top: 100px;
+  }
+
   #banner .banner-desc p {
     font-size: 16px;
     font-weight: 400;
@@ -45,6 +49,10 @@
     margin: 100px 0;
   }
 
+  #video .video-text {
+    gap: 30px;
+  }
+
   #video .video-text h2 {
     font-size: 20px;
   }
@@ -55,7 +63,7 @@
     margin-top: 100px;
   }
   #service .service-text h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   #service .service-desktop {
@@ -72,18 +80,44 @@
 
   #service .service-mobile .service-item {
     display: block;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    height: 150px;
     overflow: hidden;
+    max-height: 120px;
     background-color: var(--gray);
-    padding: 50px 20px 60px;
-    transition: height cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+    padding: 40px 20px 60px;
+    transition: max-height ease-in-out 0.75s;
+  }
+
+  #service .service-mobile .service-item:nth-child(2n) {
+    background-color: var(--yellow);
+  }
+
+  #service .service-mobile .service-item:nth-child(2n + 3) {
+    background-color: var(--red);
+  }
+
+  #service .service-mobile .service-item:nth-child(4n) {
+    background-color: var(--gray);
+  }
+
+  #service .service-mobile .service-item .button {
+    margin-top: 20px;
+  }
+
+  #service
+    .service-mobile
+    .service-item:nth-child(2n + 3)
+    .toggle-service
+    .line {
+    background-color: #fff;
   }
 
   #service .service-mobile .service-item .service-item-badge {
     margin-top: 50px;
+  }
+
+  #service .service-mobile .service-item .service-item-badge p {
+    text-align: center;
+    font-size: 12px;
   }
 
   #service .service-mobile .service-item:nth-child(3) .service-item-badge p {
@@ -106,8 +140,7 @@
   }
 
   #service .service-mobile .service-item.active {
-    height: 600px;
-    display: flex;
+    max-height: 1000px;
   }
 
   #service .service-mobile .service-item-badge {
@@ -117,7 +150,7 @@
   }
 
   #service .service-mobile .service-item-badge p {
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 40px;
     border: 1px solid #000;
   }
@@ -129,35 +162,80 @@
   }
 
   #service .service-mobile .service-item-text h3 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   #service .service-mobile .service-item .toggle-service {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     flex-direction: column;
   }
 
   #service .service-mobile .service-item .toggle-service .line {
-    width: 50px;
+    width: 100%;
     height: 2px;
     transition: all ease 0.75s;
     background-color: #000;
   }
 
-  #service .service-mobile .service-item .toggle-service .line:first-child {
-    transform: rotate(-90deg);
-  }
-
   #service .service-mobile .service-item-text p {
-    font-size: 18px;
+    font-size: 14px;
     width: 100%;
   }
+
+  #service
+    .service-mobile
+    .service-item.active
+    .toggle-service
+    .line:first-child {
+    transform: rotate(-90deg);
+  }
   /* END SERVICE */
+
+  /* START CLIENT */
+  #client {
+    margin-top: 100px;
+  }
+  #client .client-text {
+    align-items: start;
+    margin-bottom: 60px;
+  }
+
+  #client .client-text h2 {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  #client .client-text p {
+    font-size: 16px;
+  }
+  /* END CLIENT */
+
+  /* START CONTACT */
+  #contact {
+    margin-top: 100px;
+    padding: 100px 0;
+  }
+
+  #contact .contact-text h2 {
+    font-size: 35px;
+  }
+
+  #contact .contact-text p {
+    display: none;
+  }
+
+  #contact .contact-button {
+    justify-content: start;
+    margin-top: 50px;
+  }
+  /* END CONTACT */
 }
