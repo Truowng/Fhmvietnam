@@ -17,6 +17,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--gray);
+  letter-spacing: -1px;
 }
 
 a {
@@ -405,6 +406,15 @@ a:hover::after {
 
 #footer .footer-logo img {
   width: 50%;
+}
+
+#footer.dark {
+  background-color: #000;
+}
+
+#footer.dark * {
+  color: #fff;
+  fill: #fff;
 }
 
 /* END FOOTER */
