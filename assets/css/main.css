@@ -158,12 +158,22 @@ a:hover::after {
   }
 }
 
-@keyframes clientSlide {
+@keyframes clientSlideVertical {
   0% {
     transform: translate(0);
   }
   100% {
     transform: translateY(-186%);
+  }
+}
+
+@keyframes clientSlideHorizontal {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(-112.7%);
   }
 }
 

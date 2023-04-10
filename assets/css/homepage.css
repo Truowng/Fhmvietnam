@@ -348,13 +348,13 @@
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 50px;
-  animation: clientSlide linear 10s infinite;
+  animation: clientSlideVertical linear 10s infinite;
   align-items: center;
   width: 40%;
 }
 
 #client .client-desktop .client-slide-list:last-child {
-  animation: clientSlide linear 10s infinite reverse;
+  animation: clientSlideVertical linear 10s infinite reverse;
 }
 
 #client .client-desktop .client-slide-item {
@@ -366,6 +366,10 @@
 
 #client .client-desktop .client-slide-item img {
   width: 100%;
+}
+
+#client .client-mobile {
+  display: none;
 }
 
 #client .client-text {
