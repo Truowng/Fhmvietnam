@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <title>Liên hệ</title>
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <div id="header">
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_dark.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="menu-desktop">
+            <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="#">portfolio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dự án</a>
+                </li>
+              </ul>
+              <div class="button">
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-mobile">
+            <div class="menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="#">portfolio</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dịch vụ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">dự án</a>
+                </li>
+              </ul>
+              <div class="button">
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+                <a href="#"> <span>liên</span><span>hệ</span> </a>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-button" onclick="toggleMobileMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- START CONTENT -->
+    <div id="content">
+      <!-- START CONTACT -->
+      <div id="contact">
+        <div class="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="contact-form-img">
+                  <img src="./assets/images/contact/1.avif" alt="Contact" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="contact-form-wrapper">
+                  <h2 class="title">
+                    Một số thông tin cơ bản và chúng tôi sẽ liên hệ với bạn
+                  </h2>
+                  <div class="contact-form-fields">
+                    <input type="text" placeholder="Họ và tên (bắt buộc)" />
+                    <input type="email" placeholder="Email (bắt buộc)" />
+                    <input type="number" placeholder="Điện thoại (bắt buộc)" />
+                    <textarea
+                      cols="30"
+                      rows="5"
+                      placeholder="Lời nhắn"
+                    ></textarea>
+                    <div class="button">
+                      <a href="#"> <span>gửi</span> </a>
+                      <a href="#"> <span>gửi</span> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-information">
+          <div class="container">
+            <a href="tel:+0393004567" class="phone">0393004567</a>
+            <div class="row justify-content-end">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="contact-information-list">
+                  <a href="mailto:fhmvietnam@gmail.com"
+                    ><span>E.</span>fhmvietnam@gmail.com</a
+                  >
+                  <p>
+                    <span>A.</span>2/25 Thọ Tháp, Dịch Vọng, Cầu Giấy, Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- START FOOTER -->
+    <div id="footer" class="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-6">
+            <ul class="footer-link-list">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Dự án</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6">
+            <ul class="footer-link-list">
+              <li><a href="#">Website Design</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="footer-contact">
+              <p class="title">Contact:</p>
+              <ul>
+                <li><a href="#">fhmvietnam@gmail.com</a></li>
+              </ul>
+              <div class="footer-social-list">
+                <div class="footer-social-item">
+                  <a href="#">
+                    <div class="footer-social-item-img">
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.75 8.75C0.75 4.97876 0.75 3.09315 1.92157 1.92157C3.09315 0.75 4.97876 0.75 8.75 0.75H27.25C31.0212 0.75 32.9069 0.75 34.0784 1.92157C35.25 3.09315 35.25 4.97876 35.25 8.75V27.25C35.25 31.0212 35.25 32.9069 34.0784 34.0784C32.9069 35.25 31.0212 35.25 27.25 35.25H8.75C4.97876 35.25 3.09315 35.25 1.92157 34.0784C0.75 32.9069 0.75 31.0212 0.75 27.25V8.75ZM29.5 9.375C29.5 10.9628 28.2128 12.25 26.625 12.25C25.0372 12.25 23.75 10.9628 23.75 9.375C23.75 7.78718 25.0372 6.5 26.625 6.5C28.2128 6.5 29.5 7.78718 29.5 9.375ZM23.6667 19.9167C23.6667 23.0463 21.1296 25.5833 18 25.5833C14.8704 25.5833 12.3333 23.0463 12.3333 19.9167C12.3333 16.7871 14.8704 14.25 18 14.25C21.1296 14.25 23.6667 16.7871 23.6667 19.9167ZM25.6667 19.9167C25.6667 24.1508 22.2342 27.5833 18 27.5833C13.7658 27.5833 10.3333 24.1508 10.3333 19.9167C10.3333 15.6825 13.7658 12.25 18 12.25C22.2342 12.25 25.6667 15.6825 25.6667 19.9167Z"
+                          fill="#222222"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="footer-logo">
+              <img
+                src="https://fhmvietnam.vn/data/cms-image/logo/logo_new_light.png"
+                alt="Logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+      integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>
