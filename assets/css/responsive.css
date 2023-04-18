@@ -1,5 +1,3 @@
-@import "./homepage-mobile.css";
-
 /* START MOBILE */
 @media (max-width: 576px) {
   .button .text {

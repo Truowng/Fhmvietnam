@@ -216,17 +216,13 @@
 
 /* START MOBILE */
 @media (max-width: 576px) {
-  #contact {
-    margin-top: 100px;
-  }
-
   #contact .phone {
     font-size: 60px;
     line-height: 60px;
   }
 
   #contact .contact-information {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   #contact .contact-information-list p,
