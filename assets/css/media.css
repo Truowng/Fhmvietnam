@@ -9,6 +9,7 @@
   gap: 30px;
   height: 100%;
   justify-content: center;
+  padding-left: 50px;
 }
 
 #banner .banner-content .banner-text {
@@ -23,7 +24,6 @@
 #banner .banner-content .banner-desc p {
   font-size: 20px;
   font-weight: 500;
-  width: 90%;
 }
 
 #banner .banner-img {
@@ -113,10 +113,66 @@
 
 /* END ADVANTAGE */
 
+/* START REASON */
+#reason {
+  margin-top: 200px;
+}
+
+#reason .reason-title .title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+#reason .reason-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+}
+
+#reason .reason-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#reason .reason-item:hover .number {
+  background-color: #000;
+}
+
+#reason .reason-item:hover .number p {
+  color: #fff;
+}
+
+#reason .reason-item p {
+  margin-bottom: 0;
+}
+
+#reason .reason-item .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  padding: 3px 0;
+  border-radius: 50px;
+  transition: all ease 0.3s;
+  border: 1px solid #000;
+}
+
+#reason .reason-item .number p {
+  margin-bottom: 0;
+  transition: all ease 0.3s;
+  font-family: "Lato", sans-serif;
+}
+/* END REASON */
+
 /* START PROJECT */
 #project {
-  background-color: #000;
-  padding: 100px 0 0;
+  margin-top: 100px;
 }
 
 #project .project-text {
@@ -126,7 +182,7 @@
 }
 
 #project .project-text * {
-  color: #fff;
+  color: #000;
 }
 
 #project .project-text .title {
@@ -139,42 +195,77 @@
   font-weight: 500;
 }
 
-#project .project-slide {
-  padding: 100px 0;
+#project .project-list-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: start;
+}
+
+#project .project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  width: 50%;
+}
+
+#project .project-list:nth-child(2) {
+  margin-top: 100px;
+}
+
+#project .project-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+#project .project-item-img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#project .project-item-img img {
+  width: 100%;
+}
+
+#project .project-item-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   overflow: hidden;
 }
 
-#project .project-slide-item {
-  display: flex;
-  flex-wrap: nowrap;
-  min-width: fit-content;
-  justify-content: space-between;
-  gap: 100px;
-  margin-bottom: 100px;
+#project .project-item:hover .project-item-video {
+  opacity: 1;
 }
 
-#project .project-slide-item:first-child {
-  animation: imageSlide linear 30s infinite reverse;
-}
-
-#project .project-slide-item:last-child {
-  animation: imageSlide linear 30s infinite;
-  margin-bottom: 0;
-}
-
-#project .project-slide-img {
-  width: 600px;
-  height: auto;
-}
-
-#project .project-slide-img img {
-  width: 100%;
+#project .project-item-video video {
+  height: 120%;
 }
 
 /* END PROJECT */
 
 /* START CONTACT */
 #contact {
+  margin-top: 200px;
   background-color: var(--yellow);
   padding: 150px 0;
 }
@@ -205,6 +296,14 @@
 /* START RESPONSIVE */
 @media (max-width: 576px) {
   /* START BANNER */
+  #banner {
+    margin-top: 100px;
+  }
+
+  #banner .banner-content {
+    padding-left: 0;
+  }
+
   #banner .banner-content .banner-text {
     font-size: 30px;
   }
@@ -222,7 +321,7 @@
 
   /* START ADVANTAGE */
   #advantage {
-    margin-top: 0;
+    margin-top: 100px;
   }
 
   #advantage .advantage-text .title {
@@ -256,10 +355,45 @@
   }
   /* END ADVANTAGE */
 
-  /* START PROJECT */
-  #project {
+  /* START SERVICE */
+  #service {
+    margin-top: 0;
+  }
+
+  #service .service-img {
     padding: 0;
   }
+
+  #service .service-text .title {
+    font-size: 30px;
+  }
+  /* END SERVICE */
+
+  /* START REASON */
+  #reason {
+    margin-top: 100px;
+  }
+
+  #reason .reason-title .title {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  #reason .reason-list {
+    margin-top: 50px;
+  }
+
+  #reason .reason-item {
+    font-size: 16px;
+    gap: 15px;
+  }
+
+  #reason .reason-item .number {
+    min-width: 60px;
+  }
+  /* END REASON */
+
+  /* START PROJECT */
 
   #project .project-text .title {
     font-size: 30px;
@@ -268,23 +402,26 @@
   #project .project-text .desc {
     font-size: 16px;
   }
-  #project .project-slide {
-    padding: 50px;
+
+  #project .project-list-container {
+    margin-top: 50px;
+    flex-direction: column;
   }
 
-  #project .project-slide-img {
-    width: 300px;
-  }
-
-  #project .project-slide-item {
+  #project .project-list {
     gap: 50px;
-    margin-bottom: 50px;
+    width: 100%;
   }
+
+  #project .project-list:nth-child(2) {
+    margin-top: 0;
+  }
+
   /* END PROJECT */
 
   /* START CONTACT */
   #contact {
-    padding: 100px 0;
+    margin-top: 100px;
   }
 
   #contact .contact-text h2 {
