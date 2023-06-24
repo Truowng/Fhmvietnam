@@ -223,6 +223,25 @@ a:hover::after {
     transform: translateY(50%);
   }
 }
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-75px);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+}
 /* END KEYFRAMES */
 
 /* START HEADER */

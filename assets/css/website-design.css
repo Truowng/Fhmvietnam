@@ -173,8 +173,428 @@
 
 /* END PROJECT */
 
+/* START PROCESS */
+#website-design-process {
+  margin-top: 200px;
+}
+
+#website-design-process .process-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#website-design-process .process-text .title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 0.8;
+  text-align: center;
+}
+
+#website-design-process .process-text .desc {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+#website-design-process .process-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+#website-design-process .process-list::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 35px;
+  z-index: -1;
+}
+
+#website-design-process .process-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#website-design-process .process-item:hover .number {
+  background-color: var(--yellow);
+}
+
+#website-design-process .process-item:hover .number p {
+  color: #000;
+}
+
+#website-design-process .process-item p {
+  margin-bottom: 0;
+}
+
+#website-design-process .process-item .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  padding: 3px 0;
+  border-radius: 50px;
+  transition: all ease 0.3s;
+  border: 3px solid #f1f1f1;
+  background-color: #000;
+}
+
+#website-design-process .process-item .number p {
+  margin-bottom: 0;
+  transition: all ease 0.3s;
+  font-family: "Lato", sans-serif;
+  color: #f1f1f1;
+}
+
+#website-design-process .process-img,
+#website-design-process .process-img svg {
+  width: 100%;
+}
+
+#website-design-process #global,
+#website-design-process #satellite,
+#website-design-process #button1,
+#website-design-process #button2,
+#website-design-process #button3,
+#website-design-process #glasses {
+  animation: up 2s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate-reverse;
+}
+#website-design-process #star1,
+#website-design-process #star2,
+#website-design-process #star3 {
+  animation: down 2s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate-reverse;
+}
+
+#website-design-process #satellite {
+  animation-delay: 0.5s;
+}
+#website-design-process #button1 {
+  animation-delay: 0.75s;
+}
+#website-design-process #button2 {
+  animation-delay: 1s;
+}
+#website-design-process #button3 {
+  animation-delay: 1.25s;
+}
+
+#website-design-process #glasses {
+  animation-delay: 1s;
+}
+
+#website-design-process #star1 {
+  animation-delay: 0.5s;
+}
+#website-design-process #star2 {
+  animation-delay: 0.75s;
+}
+#website-design-process #star3 {
+  animation-delay: 1s;
+}
+
+/* END PROCESS */
+
+/* START PRICE */
+#website-design-price {
+  margin-top: 100px;
+}
+
+#website-design-price .price-package-item {
+  width: 100%;
+  padding: 30px 0 0px 50px;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+
+#website-design-price .price-package-item.active {
+  padding-bottom: 50px;
+}
+
+#website-design-price
+  .price-package-item.active
+  .price-package-item-content-list {
+  grid-template-rows: 1fr;
+}
+
+#website-design-price
+  .price-package-item.active
+  .price-package-item-header-title
+  .toggle-indicator
+  .line:first-child {
+  transform: rotate(90deg);
+}
+
+#website-design-price .price-desktop {
+  display: block;
+}
+
+#website-design-price .price-mobile {
+  display: none;
+}
+
+#website-design-price .price-package-item.silver {
+  background-color: var(--red);
+}
+
+#website-design-price .price-package-item.silver *,
+#website-design-price .price-package-item.plantinum * {
+  color: #f1f1f1;
+  border-color: #f1f1f1 !important;
+}
+
+#website-design-price .price-package-item.silver .line,
+#website-design-price .price-package-item.plantinum .line {
+  background-color: #f1f1f1 !important;
+}
+
+#website-design-price .price-package-item.gold {
+  background-color: var(--yellow);
+}
+#website-design-price .price-package-item.plantinum {
+  background-color: #000;
+}
+
+#website-design-price .price-package-item-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  gap: 40px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+#website-design-price .price-package-item-header-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 15px;
+}
+
+#website-design-price .price-package-item-header-badge p {
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid #000;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#website-design-price .price-package-item-header-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#website-design-price .price-package-item-header-title {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+#website-design-price .price-package-item-header-title .toggle-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#website-design-price .price-package-item-header-title .toggle-indicator .line {
+  width: 7px;
+  height: 60px;
+  background-color: #000;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+
+#website-design-price
+  .price-package-item-header-title
+  .toggle-indicator
+  .line:last-child {
+  transform: rotate(90deg) translateY(7px);
+}
+
+#website-design-price .price-package-item-header-title .title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#website-design-price .price-package-item-header-subtitle {
+  font-size: 40px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+#website-design-price .price-package-item-content-list {
+  width: 100%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 1s;
+  overflow: hidden;
+}
+
+#website-design-price .price-package-item-content-list table {
+  width: 100%;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+}
+
+#website-design-price .price-package-item-content-list tr td:first-child {
+  text-align: left;
+}
+#website-design-price .price-package-item-content-list tr td:last-child {
+  border-right: none;
+}
+
+#website-design-price .price-package-item-content-list th,
+#website-design-price .price-package-item-content-list td {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#website-design-price .price-package-item-content-list td {
+  border-right: 1px solid #000;
+}
+
+#website-design-price .price-package-item-content-list td .button {
+  justify-content: center;
+}
+
+#website-design-price .price-package-item-content-list th .name {
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#website-design-price .price-package-item-content-list th .price {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#website-design-price .price-package-item-content-list th .price span {
+  color: var(--yellow);
+}
+
+/* END PRICE */
+
+/* START PRODUCT */
+#website-design-product {
+  margin-top: 200px;
+}
+
+#website-design-product .product-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#website-design-product .product-text .title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#website-design-product .product-text .desc {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#website-design-product .product-list {
+  margin-top: 100px;
+}
+
+#website-design-product .product-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#website-design-product .product-item:hover .product-img img {
+  transform: scale(0);
+}
+#website-design-product .product-item:hover .product-img img:nth-of-type(1) {
+  transition-delay: 0.1s;
+}
+#website-design-product .product-item:hover .product-img img:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+#website-design-product .product-item:hover .product-img img:nth-of-type(3) {
+  transition-delay: 0.3s;
+}
+#website-design-product .product-item:hover .product-img img:nth-of-type(4) {
+  transition-delay: 0.4s;
+}
+#website-design-product .product-item:hover .product-img img:nth-of-type(5) {
+  transform: scale(1);
+  z-index: 1;
+}
+#website-design-product .product-item .product-img img:nth-of-type(1) {
+  transition-delay: 0.4s;
+  z-index: 5;
+}
+#website-design-product .product-item .product-img img:nth-of-type(2) {
+  transition-delay: 0.3s;
+  z-index: 4;
+}
+#website-design-product .product-item .product-img img:nth-of-type(3) {
+  transition-delay: 0.2s;
+  z-index: 3;
+}
+#website-design-product .product-item .product-img img:nth-of-type(4) {
+  transition-delay: 0.1s;
+  z-index: 2;
+}
+#website-design-product .product-item .product-img img:nth-of-type(5) {
+  transform: scale(1);
+  z-index: 1;
+}
+
+#website-design-product .product-img {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+}
+
+#website-design-product .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#website-design-product .product-name {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 20px;
+  background-color: #f1f1f1;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+}
+/* END PRODUCT */
+
 /* START CONTACT */
 #contact {
+  margin-top: 150px;
   background-color: var(--yellow);
   padding: 150px 0;
 }
@@ -282,8 +702,152 @@
   }
   /* END PROJECT */
 
+  /* START PROCESS */
+  #website-design-process {
+    margin-top: 100px;
+  }
+
+  #website-design-process .process-text .title {
+    font-size: 30px;
+  }
+
+  #website-design-process .process-text .desc {
+    font-size: 16px;
+  }
+
+  #website-design-process .process-item p {
+    font-size: 16px;
+  }
+
+  #website-design-process .process-list {
+    gap: 15px;
+  }
+  /* END PROCESS */
+
+  /* START PRICE */
+  #website-design-price .price-package-item-header {
+    gap: 20px;
+    padding-right: 0;
+  }
+  #website-design-price .price-package-item-header-badge p {
+    font-size: 12px;
+    padding: 10px 15px;
+    gap: 20px;
+  }
+
+  #website-design-price .price-package-item-header-title {
+    gap: 30px;
+  }
+
+  #website-design-price .price-package-item-header-title .title {
+    font-size: 40px;
+  }
+
+  #website-design-price .price-package-item-header-subtitle {
+    display: none;
+  }
+
+  #website-design-price .price-desktop {
+    display: none;
+  }
+
+  #website-design-price .price-package-item.active {
+    padding-bottom: 20px;
+  }
+
+  #website-design-price .price-mobile {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all cubic-bezier(0.77, 0, 0.175, 1) 1.5s;
+    overflow: hidden;
+  }
+
+  #website-design-price .price-package-item.active .price-mobile {
+    grid-template-rows: 1fr;
+  }
+
+  #website-design-price .price-package-item {
+    padding: 20px;
+  }
+
+  #website-design-price
+    .price-package-item-header-title
+    .toggle-indicator
+    .line {
+    width: 4px;
+    height: 30px;
+  }
+
+  #website-design-price
+    .price-package-item-header-title
+    .toggle-indicator
+    .line:last-child {
+    transform: rotate(90deg) translateY(4px);
+  }
+
+  #website-design-price .price-package-item-content-list {
+    margin-top: 25px;
+  }
+
+  #website-design-price .price-package-item-content-item {
+    border-top: 1px solid #f1f1f1;
+    margin-top: 25px;
+    padding-top: 25px;
+  }
+
+  #website-design-price .price-package-item-content-item .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  #website-design-price .price-package-item-content-item .title .text span {
+    display: block;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  #website-design-price .price-package-item-content-item ul {
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  #website-design-price .price-package-item-content-item ul li {
+    margin: 5px 0;
+    list-style: square;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #website-design-price
+    .price-package-item.gold
+    .price-package-item-content-item {
+    border-color: #000;
+  }
+
+  /* END PRICE */
+
+  /* START PRODUCT */
+  #website-design-product {
+    margin-top: 100px;
+  }
+
+  #website-design-product .product-text .title {
+    font-size: 30px;
+  }
+
+  #website-design-product .product-text .desc {
+    font-size: 16px;
+  }
+  /* END PRODUCT */
+
   /* START CONTACT */
   #contact {
+    margin-top: 100px;
     padding: 100px 0;
   }
 
