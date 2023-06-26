@@ -29,13 +29,25 @@
     padding: 100px 0 50px;
   }
 
-  #footer .footer-contact {
-    margin: 20px 0 60px;
+  #footer .footer-link-list {
+    margin-bottom: 30px;
   }
 
   #footer .footer-link-list li a,
   #footer .footer-contact ul li a {
     font-size: 16px;
+  }
+
+  #footer .footer-logo {
+    margin-top: 30px;
+  }
+
+  #footer .footer-dkkd-text {
+    margin-top: 20px;
+  }
+
+  #footer .footer-dkkd-text p {
+    text-align: center;
   }
   /* END FOOTER */
 }

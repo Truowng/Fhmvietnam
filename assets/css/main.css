@@ -124,6 +124,10 @@ a:hover::after {
   height: 1px;
 }
 
+.number {
+  font-family: "Lato", "sans-serif" !important;
+}
+
 /* START KEYFRAMES */
 
 @keyframes textSlide {
@@ -366,17 +370,30 @@ a:hover::after {
 
 /* START FOOTER */
 #footer {
-  padding: 150px 0;
+  padding: 150px 0 30px 0;
 }
 
-#footer .footer-link-list,
-#footer .footer-contact ul {
+#footer .footer-link-list {
   list-style: none;
   padding-left: 0;
 }
 
+#footer .footer-link-list .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 #footer .footer-link-list li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+#footer .footer-link-list li p {
+  margin-bottom: 0;
 }
 
 #footer .footer-link-list li,
@@ -385,36 +402,15 @@ a:hover::after {
 }
 
 #footer .footer-link-list li a,
-#footer .footer-contact ul li a {
-  font-size: 18px;
+#footer .footer-link-list li p {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 #footer .footer-link-list li a::after,
 #footer .footer-contact ul li a::after {
   content: "";
   height: 1px;
-}
-
-#footer .footer-contact .title {
-  font-weight: 600;
-  font-size: 18px;
-}
-#footer .footer-contact * {
-  width: fit-content;
-  margin-bottom: 10px;
-}
-
-#footer .footer-social-list {
-  margin-top: 15px;
-}
-
-#footer .footer-social-item-img svg path {
-  transition: all ease 0.3s;
-}
-
-#footer .footer-social-item-img:hover svg path {
-  fill: transparent;
-  stroke: #000;
 }
 
 #footer .footer-logo {
@@ -426,7 +422,40 @@ a:hover::after {
 }
 
 #footer .footer-logo img {
-  width: 50%;
+  width: 100%;
+}
+
+#footer .footer-dkkd {
+  padding-top: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #000;
+}
+
+#footer .footer-certificate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .footer-certificate-img {
+  flex: 1;
+}
+
+#footer .footer-certificate-img img {
+  width: 100%;
+}
+
+#footer .footer-dkkd-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#footer .footer-dkkd-text p {
+  margin-bottom: 0;
+  font-weight: 500;
 }
 
 #footer.dark {
@@ -436,6 +465,11 @@ a:hover::after {
 #footer.dark * {
   color: #fff;
   fill: #fff;
+  border-color: #f1f1f1;
+}
+
+#footer.dark a::after {
+  background-color: #f1f1f1;
 }
 
 /* END FOOTER */
