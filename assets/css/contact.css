@@ -97,44 +97,13 @@
 }
 
 #contact .contact-information {
-  margin: 200px 0 100px;
+  margin: 100px 0 0;
 }
 
-#contact .phone {
-  font-size: 200px;
-  font-family: "Lato", sans-serif;
-  line-height: 200px;
-  text-align: center;
-  width: fit-content;
-  display: block;
-  margin: 0 auto;
+#contact .contact-information .maps {
+  border-top: 1px solid #000;
 }
 
-#contact .phone::after {
-  content: "";
-  height: 10px;
-}
-
-#contact .contact-information-list {
-  margin-top: 100px;
-}
-
-#contact .contact-information-list p,
-#contact .contact-information-list a {
-  font-size: 20px;
-  font-family: "Lato", sans-serif;
-  margin: 15px 0;
-}
-
-#contact .contact-information-list p span,
-#contact .contact-information-list a span {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-#contact .contact-map {
-  margin-top: 100px;
-}
 /* END CONTACT FORM */
 
 /* START RESPONSIVE */
@@ -188,7 +157,7 @@
   }
 
   #contact .contact-information {
-    margin: 50px 0 100px;
+    margin: 50px 0 0px;
   }
 
   #contact .contact-form-wrapper .title {
@@ -219,10 +188,6 @@
   #contact .phone {
     font-size: 60px;
     line-height: 60px;
-  }
-
-  #contact .contact-information {
-    margin-bottom: 50px;
   }
 
   #contact .contact-information-list p,
