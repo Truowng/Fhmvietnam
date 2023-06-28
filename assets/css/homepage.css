@@ -113,7 +113,7 @@
 
 #homepage-banner .banner-desc {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
   user-select: none;
   margin-top: 100px;

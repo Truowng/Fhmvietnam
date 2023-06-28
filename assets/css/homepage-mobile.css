@@ -1,27 +1,27 @@
 @media (max-width: 576px) {
   /* START BANNER */
-  #banner {
-    padding-bottom: 50px;
+  #homepage-banner {
+    padding-bottom: 100px;
   }
 
-  #banner .banner-content .title,
-  #banner .banner-content-slide p {
+  #homepage-banner .banner-content .title,
+  #homepage-banner .banner-content-slide p {
     font-size: 40px;
   }
 
-  #banner .banner-content-slide-container {
+  #homepage-banner .banner-content-slide-container {
     height: 65px;
   }
 
-  #banner .banner-icon {
+  #homepage-banner .banner-icon {
     display: none;
   }
 
-  #banner .banner-desc {
-    margin-top: 100px;
+  #homepage-banner .banner-desc {
+    margin: 50px 0;
   }
 
-  #banner .banner-desc p {
+  #homepage-banner .banner-desc p {
     font-size: 16px;
     font-weight: 400;
     width: 95%;
