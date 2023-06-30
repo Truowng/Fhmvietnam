@@ -804,6 +804,15 @@
   #website-design-product .product-text .desc {
     font-size: 16px;
   }
+
+  #website-design-product .product-img {
+    height: auto;
+  }
+
+  #website-design-product .product-img img {
+    height: auto;
+    object-fit: unset;
+  }
   /* END PRODUCT */
 
   /* START CONTACT */
