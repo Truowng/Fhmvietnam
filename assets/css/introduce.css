@@ -532,6 +532,15 @@
   #introduce-core-value .core-value-item {
     padding: 20px;
   }
+
+  #introduce-core-value .core-value-item .core-value-item-text {
+    gap: 0;
+  }
+
+  #introduce-core-value .core-value-item .core-value-item-text .title {
+    font-size: 22px;
+  }
+
   /* END CORE */
 
   /* START TEAM  */
