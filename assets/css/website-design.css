@@ -456,6 +456,7 @@
 
 #website-design-price .price-package-item-content-list tr td:first-child {
   text-align: left;
+  width: 300px;
 }
 #website-design-price .price-package-item-content-list tr td:last-child {
   border-right: none;
@@ -469,6 +470,7 @@
 
 #website-design-price .price-package-item-content-list td {
   border-right: 1px solid #000;
+  font-size: 18px;
 }
 
 #website-design-price .price-package-item-content-list td .button {
@@ -491,6 +493,8 @@
 
 #website-design-price .price-package-item-content-list th .price span {
   color: var(--yellow);
+  display: block;
+  min-width: 240px;
 }
 
 /* END PRICE */
