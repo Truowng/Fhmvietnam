@@ -618,36 +618,25 @@
   transition: transform ease 1s;
 }
 
-#website-design-blog .blog-item .blog-item-text {
+#website-design-blog .blog-item .blog-item-text a {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-#website-design-blog .blog-item .blog-item-text .text {
-  font-size: 20px;
-  text-transform: unset;
-  font-weight: 600;
-  max-width: 70%;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+#website-design-blog .blog-item .blog-item-text .title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
-#website-design-blog .blog-item .blog-item-text .text::after {
-  content: "";
+#website-design-blog .blog-item .blog-item-text .desc {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-#website-design-blog .blog-item .blog-item-text .icon {
-  width: 20px;
-}
-
-#website-design-blog .blog-item .blog-item-text .icon svg {
-  width: 100%;
-  height: auto;
-}
 /* END BLOG */
 
 /* START CONTACT */
@@ -676,6 +665,111 @@
   align-items: center;
   justify-content: end;
   height: 100%;
+}
+
+#website-design-mobile-contact {
+  display: none;
+}
+
+#website-design-mobile-contact .contact-form-img {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+#website-design-mobile-contact .contact-form-img img {
+  width: 80%;
+}
+
+#website-design-mobile-contact .contact-form-wrapper .title {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+#website-design-mobile-contact .contact-form-fields {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#website-design-mobile-contact
+  .contact-form-fields
+  input::-webkit-outer-spin-button,
+#website-design-mobile-contact
+  .contact-form-fields
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#website-design-mobile-contact .contact-form-fields textarea {
+  resize: none;
+}
+
+#website-design-mobile-contact .contact-form-fields input,
+#website-design-mobile-contact .contact-form-fields textarea {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #bbb;
+  font-size: 25px;
+  background-color: transparent;
+  transition: border-bottom ease 0.3s;
+}
+
+#website-design-mobile-contact .contact-form-fields input:focus,
+#website-design-mobile-contact .contact-form-fields textarea:focus {
+  border-bottom: 2px solid #000;
+}
+
+#website-design-mobile-contact .contact-form-fields .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40px;
+  background-color: #000;
+  border-radius: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  justify-content: unset;
+  gap: unset;
+  overflow: hidden;
+  width: 100px;
+}
+
+#website-design-mobile-contact .contact-form-fields .button a {
+  color: #fff;
+  display: flex;
+  gap: 5px;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+  padding: 8px 0;
+  min-width: 100%;
+  justify-content: center;
+}
+
+#website-design-mobile-contact .contact-form-fields .button a:last-child {
+  border-radius: 40px;
+  background-color: var(--gray);
+  color: #000;
+}
+
+#website-design-mobile-contact .contact-form-fields .button:hover a {
+  transform: translateY(-101%);
+}
+
+#website-design-mobile-contact .contact-form-fields .button a:last-child span {
+  display: block;
+  transform: translateY(100%);
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
+}
+
+#website-design-mobile-contact
+  .contact-form-fields
+  .button:hover
+  a:last-child
+  span {
+  transform: translateY(0);
 }
 
 /* END CONTACT */
@@ -929,9 +1023,6 @@
     margin-top: 50px;
   }
 
-  #website-design-blog .blog-item .blog-item-text .text {
-    font-size: 16px;
-  }
   /* END BLOG */
 
   /* START CONTACT */
@@ -952,6 +1043,31 @@
     justify-content: start;
     margin-top: 50px;
   }
+
+  #website-design-mobile-contact {
+    margin-top: 100px;
+    display: block;
+  }
+
+  #website-design-mobile-contact .phone {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  #website-design-mobile-contact .contact-form-wrapper .title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  #website-design-mobile-contact .contact-form-fields input,
+  #website-design-mobile-contact .contact-form-fields textarea {
+    font-size: 16px;
+  }
+
+  #website-design-mobile-contact .contact-form-fields {
+    margin-top: 50px;
+  }
+
   /* END CONTACT */
 }
 /* END RESPONSIVE */
