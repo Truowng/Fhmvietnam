@@ -477,6 +477,12 @@
   justify-content: center;
 }
 
+#website-design-price .price-package-item-content-list th:first-child {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+}
+
 #website-design-price .price-package-item-content-list th .name {
   margin-bottom: 0;
   font-size: 25px;
