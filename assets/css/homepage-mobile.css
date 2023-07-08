@@ -36,11 +36,7 @@
 
   #project .project-slide-img {
     width: 300px;
-  }
-
-  #project .project-slide-item {
-    gap: 50px;
-    margin-bottom: 50px;
+    margin: 0 20px;
   }
   /* END PROJECT */
 

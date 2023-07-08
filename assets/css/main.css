@@ -156,12 +156,38 @@ a:hover::after {
   }
 }
 
-@keyframes imageSlide {
+/* @keyframes imageSlide {
   0% {
     transform: translateX(-53.6%);
   }
   100% {
     transform: translateX(-2.4%);
+  }
+}
+
+@keyframes imageSlideReverse {
+  0% {
+    transform: translateX(-2.4%);
+  }
+  100% {
+    transform: translateX(-53.6%);
+  }
+} */
+@keyframes imageSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-0%);
+  }
+}
+
+@keyframes imageSlideReverse {
+  0% {
+    transform: translateX(-0%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -282,6 +308,7 @@ a:hover::after {
 
   width: 100%;
   height: 100%;
+  display: none;
 
   /* display: none; */
 }

@@ -96,7 +96,7 @@
   align-items: center;
 }
 
-#advantage .advantage-item-img svg {
+#advantage .advantage-item-img img {
   width: 100%;
 }
 
@@ -143,29 +143,32 @@
 #project .project-slide {
   padding: 100px 0;
   overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+#project .project-slide:last-of-type {
+  padding-top: 0;
 }
 
 #project .project-slide-item {
-  display: flex;
-  flex-wrap: nowrap;
-  min-width: fit-content;
-  justify-content: space-between;
-  gap: 100px;
-  margin-bottom: 100px;
+  display: inline-block;
+  white-space: nowrap;
 }
 
-#project .project-slide-item:first-child {
+#project .project-slide .project-slide-item {
+  animation: imageSlide linear 30s infinite;
+}
+
+#project .project-slide:last-of-type .project-slide-item {
   animation: imageSlide linear 30s infinite reverse;
 }
 
-#project .project-slide-item:last-child {
-  animation: imageSlide linear 30s infinite;
-  margin-bottom: 0;
-}
-
 #project .project-slide-img {
+  display: inline-block;
   width: 600px;
   height: auto;
+  margin: 0 50px;
 }
 
 #project .project-slide-img img {
@@ -847,12 +850,9 @@
 
   #project .project-slide-img {
     width: 300px;
+    margin: 0 20px;
   }
 
-  #project .project-slide-item {
-    gap: 50px;
-    margin-bottom: 50px;
-  }
   /* END PROJECT */
 
   /* START PROCESS */
