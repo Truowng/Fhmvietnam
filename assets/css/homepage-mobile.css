@@ -68,39 +68,35 @@
   }
 
   #client .client-mobile {
-    display: flex;
+    display: block;
+    overflow: hidden;
   }
 
   #client .client-mobile .client-slide {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-    gap: 50px;
+    white-space: nowrap;
   }
 
   #client .client-mobile .client-slide-list {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 50px;
-    animation: clientSlideHorizontal linear 15s infinite;
-    align-items: center;
-    min-width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    animation: clientSlideHorizontal linear 10s infinite;
+    width: fit-content;
   }
 
-  #client .client-mobile .client-slide-list:last-child {
-    animation: clientSlideHorizontal linear 15s infinite reverse;
+  #client .client-mobile .client-slide:last-of-type .client-slide-list {
+    animation: clientSlideHorizontal linear 10s infinite reverse;
   }
 
   #client .client-mobile .client-slide-item {
-    min-width: 150px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+    margin: auto 20px;
+    width: 200px;
+    height: 100%;
+    display: inline-block;
   }
 
   #client .client-mobile .client-slide-item img {
     width: 100%;
+    height: auto;
   }
 
   #client .client-text {
