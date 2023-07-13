@@ -1,5 +1,8 @@
 let toggle = false;
 const mobileMenu = document.querySelector("#header .menu-mobile");
+const mobileMenuItems = document.querySelectorAll(
+  "#header .menu-mobile .menu-item"
+);
 const toggleButton = document.querySelector(
   "#header .header-container .toggle-button"
 );
@@ -15,3 +18,11 @@ const toggleMobileMenu = () => {
     toggle = true;
   }
 };
+
+mobileMenuItems.forEach((mobileMenuItem) => {
+  mobileMenuItem.querySelector("a").addEventListener("click", () => {
+    mobileMenuItem.classList.contains("active")
+      ? mobileMenuItem.classList.remove("active")
+      : mobileMenuItem.classList.add("active");
+  });
+});
