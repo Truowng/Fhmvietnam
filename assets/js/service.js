@@ -149,10 +149,16 @@ const handleControl = (action) => {
     if (count < serviceItems.length - 1) {
       count++;
       changeService();
+    } else {
+      count = 0;
+      changeService();
     }
   } else if (action === "prev") {
     if (0 < count) {
       count--;
+      changeService();
+    } else {
+      count = serviceItems.length - 1;
       changeService();
     }
   }
