@@ -178,6 +178,26 @@
 
   /* END HEADER */
 
+  /* START CONTACT */
+  #contact {
+    margin-top: 100px;
+    padding: 100px 0;
+  }
+
+  #contact .contact-text h2 {
+    font-size: 35px;
+  }
+
+  #contact .contact-text p {
+    display: none;
+  }
+
+  #contact .contact-button {
+    justify-content: start;
+    margin-top: 50px;
+  }
+  /* END CONTACT */
+
   /* START FOOTER */
   #footer {
     padding: 100px 0 50px;
