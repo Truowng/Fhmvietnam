@@ -111,6 +111,7 @@
   font-size: 12px;
   padding: 5px 10px;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid #bbb;
   color: #f1f1f1;
   border-radius: 200px;
@@ -310,6 +311,7 @@
 
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   opacity: 1;
 
   width: 80px;
@@ -619,6 +621,7 @@
 
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
   }
 
   #blog-fhm .content-item-sub-container {
