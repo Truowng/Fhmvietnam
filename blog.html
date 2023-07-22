@@ -477,10 +477,13 @@
                 </div>
                 <div class="col-lg-8 col-md-8 col-12">
                   <div class="blog-video-current-video">
-                    <video src="./assets/video/video.webm"></video>
+                    <video
+                      src="./assets/video/video.webm"
+                      videoState="pause"
+                    ></video>
                     <div
                       class="blog-video-current-video-controller"
-                      state="play"
+                      isClicked="false"
                     >
                       <div class="play active">
                         <i class="fa-solid fa-play"></i>
@@ -993,5 +996,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/video.js"></script>
   </body>
 </html>

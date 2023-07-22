@@ -3,14 +3,6 @@ const pricePackages = document.querySelectorAll(
 );
 
 pricePackages.forEach((pricePackage) => {
-  //   pricePackage.addEventListener("click", () => {
-  //     document
-  //       .querySelector("#website-design-price .price-package-item.active")
-  //       .classList.remove("active");
-  //     document.querySelector("price-package-item.active")
-  //       ? pricePackage.classList.remove("active")
-  //       : pricePackage.classList.add("active");
-  //   });
   pricePackage.addEventListener("click", () => {
     if (
       document.querySelector(
