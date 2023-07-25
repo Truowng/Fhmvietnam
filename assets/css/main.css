@@ -608,7 +608,6 @@ a:hover::after {
 /* START CONTACT */
 #contact {
   margin-top: 200px;
-  background-color: var(--yellow);
   padding: 150px 0;
 }
 

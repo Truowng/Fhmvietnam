@@ -1015,6 +1015,9 @@
   /* END PRODUCT */
 
   /* START BLOG */
+  #website-design-blog {
+    margin-top: 100px;
+  }
   #website-design-blog .blog-title .title {
     font-size: 30px;
   }
@@ -1029,6 +1032,7 @@
   #contact {
     margin-top: 100px;
     padding: 100px 0;
+    display: none;
   }
 
   #contact .contact-text h2 {
