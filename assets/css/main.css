@@ -9,6 +9,7 @@
   --red: #c82843;
   --gray: #f1f1f1;
   --dark-gray: #6d6d6d;
+  --blue: #3168c2;
 }
 
 * {
@@ -45,6 +46,24 @@ a::after {
 
 a:hover::after {
   width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .button {
@@ -295,6 +314,7 @@ a:hover::after {
 
   width: 100%;
   height: 100%;
+
   animation: fadeIn cubic-bezier(0.77, 0, 0.175, 1) 0.75s;
   animation-delay: 0.5s;
 }
